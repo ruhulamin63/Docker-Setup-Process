@@ -23,3 +23,12 @@ sudo apt install docker-compose
   - ```start.sh```: Contains the command to start the application.
 - The ```docker-compose.yml``` file contains the configuration for the Docker Compose service.
 - The ```nginx->conf.d->app.conf``` to change ```fastcgi_pass "your-service-name":9000;```.
+  - .env file contains the environment variables for the application.
+  ```bash
+    DB_CONNECTION=mysql
+    DB_HOST=serviceName_db
+    DB_PORT=3306
+    DB_DATABASE=your_database_name
+    DB_USERNAME=your_database_username
+    DB_PASSWORD=your_database_password
+```
